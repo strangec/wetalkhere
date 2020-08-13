@@ -14,13 +14,13 @@
 
 <p>
 
-  <label for="to">to:</label>
+  <label for="to" required>to:</label>
   <select name="to" id="to">
     <option value="Sultan">Sultan</option>
     <option value="Charlotte">Charlotte</option>
 </select>
 
-      <label for="from">from:</label>
+      <label for="from" required>from:</label>
       <select name="from" id="from">
         <option value="Charlotte">Charlotte</option>
         <option value="Sultan">Sultan</option>
@@ -29,6 +29,12 @@
 
 
   <input name="message" type="text" placeholder="message" required>
+
+  <form action="/action_page.php">
+  <input type="file" id="attachment" name="send a photo">
+  <input type="submit">
+</form>
+
   <button type="submit" placeholder="send">Send</button>
 </form>
 
