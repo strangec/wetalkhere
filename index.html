@@ -1,6 +1,18 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Just Between Us</title>
 
+<body>
+  What do you want to say today?
+  <br>
 <form name="submit-to-google-sheet">
+
+<p>
 
   <label for="to">to:</label>
   <select name="to" id="to">
@@ -15,9 +27,13 @@
         </select>
 
 
+
   <input name="message" type="text" placeholder="message" required>
   <button type="submit" placeholder="send">Send</button>
 </form>
+
+</p>
+</body>
 
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxiMOCb-umWbglzukTCQSL2NdPuAM-TaYyUK8ukn-8NkjW1rmu7/exec'

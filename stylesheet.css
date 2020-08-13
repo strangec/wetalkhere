@@ -1,0 +1,12 @@
+html,
+
+body{
+font-family: 'Minipax';
+src: url('fonts/Minipax/Minipax-Regular.woff') format('woff');
+background-image: url("TheresaDuncan.png");
+color: white;
+}
+
+p{
+  text-shadow: 2px 2px limegreen;
+}
