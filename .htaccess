@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "password?"
+/Users/charlottestrange/git/wetalkhere/.htaccess
+require valid-user
