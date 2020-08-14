@@ -10,3 +10,10 @@ color: white;
 p{
   text-shadow: 2px 2px limegreen;
 }
+
+.password{
+  text-align: center;
+  margin: 0 auto;
+  color: #0000FF;
+  font: normal 13px arial, sans-serif;
+}
