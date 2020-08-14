@@ -2,44 +2,28 @@
 <html lang="en">
   <head>
 
-  What do you want to say today?
-  <br>
-<form name="submit-to-google-sheet">
+    <script type="text/javascript">
+// PASSWORD PROTECTION SCRIPT
 
-<p>
+function TheLogin() {
 
-  <label for="to" required>to:</label>
-  <select name="to" id="to">
-    <option value="Sultan">Sultan</option>
-    <option value="Charlotte">Charlotte</option>
-</select>
+var password = 'pepper';
 
-      <label for="from" required>from:</label>
-      <select name="from" id="from">
-        <option value="Charlotte">Charlotte</option>
-        <option value="Sultan">Sultan</option>
-        </select>
+if (this.document.login.pass.value == password) {
+  top.location.href="index2.html";
+}
+else {
+  window.alert("Nice Try, Loser");
+  }
+}
 
-
-
-  <input name="message" type="text" placeholder="message" required>
-
-
-  <button type="submit" placeholder="send">Send</button>
-</form>
-
-</p>
-</body>
-
-
-<script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxiMOCb-umWbglzukTCQSL2NdPuAM-TaYyUK8ukn-8NkjW1rmu7/exec'
-  const form = document.forms['submit-to-google-sheet']
-
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
 </script>
+
+
+<div class="password" style="text-align: center; margin: 0 auto; color: #0000FF; font: normal 13px arial, sans-serif;">
+password?:<br>
+<form name="login" style="margin: 5px 0px 0px 0px;">
+<input type="text" name="pass" size="17" onkeydown="if(event.keyCode==13) event.keyCode=9;" style="width: 130px;"><br>
+<input type="button" value="Click to Login" style="width: 134px; margin: 4px auto 4px auto;" onclick="javascript:TheLogin(this.form)">
+</form>
+</div>
