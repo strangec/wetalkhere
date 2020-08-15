@@ -1,9 +1,9 @@
 html,
 
 body{
-font-family: 'Minipax';
+font-family: Arial, Helvetica, sans-serif;
 src: url('fonts/Minipax/Minipax-Regular.woff') format('woff');
-background-image: url("TheresaDuncan.png");
+background: hotpink;
 color: white;
 }
 
@@ -16,4 +16,10 @@ p{
   margin: 0 auto;
   color: #0000FF;
   font: normal 13px arial, sans-serif;
+}
+
+#messagebox{
+  width:300px;
+  height: 400px;
+  background: violet;
 }
