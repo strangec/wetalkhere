@@ -7,6 +7,7 @@ background: hotpink;
 color: white;
 }
 
+
 p{
   text-shadow: 2px 2px limegreen;
 }
@@ -18,8 +19,27 @@ p{
   font: normal 13px arial, sans-serif;
 }
 
+#header{
+ position: relative;
+ animation-name: titletext;
+ animation-duration: 25s;
+ animation-iteration-count: infinite;
+}
+
+@keyframes titletext {
+  0%   {left:0px; top:0px;}
+  20%  {left:700px; top:0px;}
+  40%  {left:1000px; top: 300px;}
+  50%  {left:250px; top:250px;}
+  65%  {left:200px; top:400px;}
+  85%  {left:600px; top:1000px;}
+  100% {left:0px; top:0px;}
+
+
 #messagebox{
   width:300px;
   height: 400px;
   background: violet;
+  color: LightCyan;
+  text-shadow: 30px 30px honeydew;
 }
