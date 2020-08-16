@@ -24,6 +24,7 @@ p{
  animation-name: titletext;
  animation-duration: 25s;
  animation-iteration-count: infinite;
+ z-index: 1;
 }
 
 @keyframes titletext {
@@ -34,6 +35,7 @@ p{
   65%  {left:200px; top:400px;}
   85%  {left:600px; top:1000px;}
   100% {left:0px; top:0px;}
+}
 
 
 #messagebox{
@@ -42,4 +44,15 @@ p{
   background: violet;
   color: LightCyan;
   text-shadow: 30px 30px honeydew;
+}
+
+#button{
+  background-color: Yellow;
+  border-color: blue;
+}
+
+#textarea{
+  position: absolute;
+  margin-left: 50%;
+  z-index: -1;
 }
