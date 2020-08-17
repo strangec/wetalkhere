@@ -2,11 +2,10 @@ html,
 
 body{
 font-family: Arial, Helvetica, sans-serif;
-src: url('fonts/Minipax/Minipax-Regular.woff') format('woff');
-background: hotpink;
-color: white;
-}
 
+background: hotpink;
+color: blue;
+}
 
 .password{
   text-align: center;
@@ -47,20 +46,32 @@ color: white;
   text-shadow: 30px 30px honeydew;
 }
 
-#select, #textarea{
+#select{
     width: 50%;
-    padding: 20%;
+    padding: 2%;
     overflow-y: scroll;
     overflow-x: hidden;
-    width: 40%;
-   float: right;
+    width: 20%;
    padding: 20px;
-   border: 2px solid red;
+   border: 2px solid orange;
+}
+
+#textarea{
+  width: 50%;
+  padding: 2%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 20%;
+ padding: 20px;
+ border: 2px solid red;
 }
 
 #button{
   background-color: PapayaWhip;
-  border-color: blue;
+  border-color: limegreen;
+  border-radius: 30%;
+  color: limegreen;
+  height: 19px;
 }
 
 #textarea{
