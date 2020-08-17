@@ -45,7 +45,6 @@ color: white;
   background: violet;
   color: LightCyan;
   text-shadow: 30px 30px honeydew;
-  border: 2px solid red;
 }
 
 #select, #textarea{
