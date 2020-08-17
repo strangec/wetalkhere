@@ -4,16 +4,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="stylesheet.css">
+    <script>
+        function fun(){
+            document.getElementById('messagebox').value='';
+            }
+    </script>
+
     <title>Just Between Us</title>
 
   <div id="header"> What do you want to say today? </div>
+</head>
 
-<div id="box-container">
-  <br>
-  <div id="select">
-<form name="submit-to-google-sheet">
 
+<div id="select">
+<form id="submit-to-google-sheet">
 
   <label for="to" required>to:</label>
   <select name="to" id="to">
@@ -34,13 +40,13 @@
   <textarea id = "messagebox" name="message" type="text" placeholder="message" required> </textarea>
 
 
-  <button type="submit" placeholder="send" id="button"><i>Send</i></button>
-</form>
-</div>
-</div>
-</p>
-</body>
+  <button type="submit" placeholder="send" id="button" onclick="fun()"><i>Send</i></button>
 
+</form>
+
+</div>
+
+</body>
 
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxiMOCb-umWbglzukTCQSL2NdPuAM-TaYyUK8ukn-8NkjW1rmu7/exec'
