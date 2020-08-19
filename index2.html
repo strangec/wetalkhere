@@ -10,38 +10,34 @@
 
     <title>Just Between Us</title>
 
-  <div id="header"> What do you want to say today? </div>
+  <div font-family: 'Amagro'; id="header"> What do you want to say today? </div>
 </head>
-
-
+<body>
+<div id="boxcontainer">
 <div id="select">
-<form id="submit-to-google-sheet">
 
+<form id="submit-to-google-sheet">
   <label for="to" required>to:</label>
   <select name="to" id="to">
     <option value="Sultan">Sultan</option>
     <option value="Charlotte">Charlotte</option>
-</select>
+  </select>
 
-
-      <label for="from" required>from:</label>
-      <select name="from" id="from">
-        <option value="Charlotte">Charlotte</option>
-        <option value="Sultan">Sultan</option>
-        </select>
+  <label for="from" required>from:</label>
+  <select name="from" id="from">
+    <option value="Charlotte">Charlotte</option>
+    <option value="Sultan">Sultan</option>
+  </select>
       </div>
 
-
-<div id="textarea">
+<div id="message">
   <textarea id = "messagebox" name="message" type="text" placeholder="message" required> </textarea>
-
-
-  <button type="submit" placeholder="send" id="button" onclick="myfun"><i>Send</i></button>
-
+  <button type="submit" placeholder="send" id="button"><i>Send</i></button>
 </form>
 
+</script>
 </div>
-
+</div>
 </body>
 
 <script>
@@ -53,5 +49,8 @@
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
+    $('#submit-to-google-sheet').reset()
+
+
   })
 </script>
