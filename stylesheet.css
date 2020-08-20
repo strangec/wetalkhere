@@ -9,7 +9,7 @@ html
 
 body{
 font-family: 'times new roman';
-background-color: papayawhip;
+background-image: url('empty_sheet.png');
 color: lightgreen;
 }
 
@@ -71,7 +71,7 @@ color: lightgreen;
 }
 
 #button{
-  background-color: papayawhip;
+  background-color: white;
   border-color: limegreen;
   border-radius: 30%;
   color: limegreen;
