@@ -1,14 +1,24 @@
-html,
+html
 
 @font-face{
-  font-family:'Amagro';
-  src: url('/amagro/Amagro-bold.ttf') format('truetype');
+  font-family: 'amagro';
+  src: url('amagro/Amagro-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body{
-font-family:'Amagro', serif;
-background: hotpink;
-color: white;
+font-family: 'arial';
+background-image: url('butterfly.png');
+color: lightgreen;
+-webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+#header{
+  font-family: 'amagro', serif;
+  -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 .password{
@@ -24,6 +34,8 @@ color: white;
  animation-duration: 25s;
  animation-iteration-count: infinite;
  z-index: 1;
+ font-family: 'amagro';
+ font-size:30pt;
 }
 
 @keyframes header {
@@ -36,50 +48,55 @@ color: white;
   100% {left:0px; top:0px;}
 }
 
-#select{
-  position: relative;
-  margin-left: 10%;
-  margin-top: 100px;
-}
 
 #messagebox{
   width:250px;
   height: 300px;
-  background: violet;
-  color: LightCyan;
+  background-image: url('butterfly2.png');
+  color: papayawhip;
   text-shadow: 30px 30px honeydew;
+  position:relative;
+  margin-left:50%;
+  margin-top: 10%;
 }
 
 #select{
-    width: 50%;
-    padding: 2%;
+    width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
-    width: 20%;
-   padding: 20px;
-   border: 2px solid orange;
 }
 
 #textarea{
-  width: 50%;
-  padding: 2%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  width: 20%;
- padding: 20px;
- border: 2px solid red;
+  position:relative;
+  margin-left:40%;
+  z-index: -1;
 }
 
 #button{
-  background-color: PapayaWhip;
+  background-color: papayawhip;
   border-color: limegreen;
   border-radius: 30%;
   color: limegreen;
   height: 19px;
 }
 
-#textarea{
-  position: absolute;
-  margin-left: 50%;
-  z-index: -1;
+#boxcontainer{
+  width: 100%;
+}
+
+.left{
+  position:relative;
+  margin-top: 30px;
+  float:left;
+  width: 40%;
+  overflow:hidden;
+  margin-left: 7%;
+  text-align: left;
+}
+
+.right{
+  overflow:hidden;
+  text-align: right;
+  margin-right: 10%;
+  margin-top: 100px;
 }
