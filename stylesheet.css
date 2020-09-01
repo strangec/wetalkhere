@@ -22,13 +22,12 @@ body{
  z-index: 1;
  font-family: 'bespoke';
  font-size:30pt;
- margin-top: 30%;
 }
 
 .butterfly{
   height:400px;
   margin-left: 50%;
-  margin-top:20%;
+  margin-top:10%;
   position:relative;
   filter:blur(1.2em);
 }
