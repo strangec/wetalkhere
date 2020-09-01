@@ -1,24 +1,15 @@
 html
 
 @font-face{
-  font-family: 'amagro';
-  src: url('amagro/Amagro-bold.ttf') format('truetype');
+  font-family: 'bespoke';
+  src: url('Bespoke-I68PWaAxQ5_webfont/Bespoke-I68PWaAxQ5.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 body{
-font-family: 'times new roman';
-background-image: url('empty_sheet.png');
-color: lightgreen;
+  color:lightgreen;
 }
-
-#header{
-  font-family: 'amagro', serif;
-  -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-}
-
 .password{
   text-align: center;
   margin: 0 auto;
@@ -28,73 +19,49 @@ color: lightgreen;
 
 #header{
  position: relative;
- animation-name: header;
- animation-duration: 25s;
- animation-iteration-count: infinite;
  z-index: 1;
- font-family: 'amagro';
+ font-family: 'bespoke';
  font-size:30pt;
 }
 
-@keyframes header {
-  0%   {left:0px; top:0px;}
-  20%  {left:700px; top:0px;}
-  40%  {left:1000px; top: 300px;}
-  50%  {left:250px; top:250px;}
-  65%  {left:200px; top:400px;}
-  85%  {left:600px; top:1000px;}
-  100% {left:0px; top:0px;}
+.butterfly{
+  height:100%;
+  margin-left: 50%;
+  margin-top:20%;
+  position:relative;
 }
-
 
 #messagebox{
   width:250px;
   height: 300px;
-  background-image: linear-gradient(lightgreen, white);
-  color: papayawhip;
-  text-shadow: 30px 30px honeydew;
+  color: white;
+  background-color:#ffd187;
   position:relative;
-  margin-left:50%;
-  margin-top: 10%;
+  margin-left:80%;
+  margin-top: 35%;
+  opacity:80%;
 }
 
-#select{
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-
-#textarea{
-  position:relative;
-  margin-left:40%;
-  z-index: -1;
-}
 
 #button{
-  background-color: white;
-  border-color: limegreen;
+  background-color: white, 0;
+  border-color: hidden;
   border-radius: 30%;
   color: limegreen;
   height: 19px;
+  margin-left:40%;
 }
 
-#boxcontainer{
-  width: 100%;
+
+.grid-container{
+  display: flex;
+  padding-right:20px;
 }
 
-.left{
-  position:relative;
-  margin-top: 30px;
-  float:left;
-  width: 40%;
-  overflow:hidden;
-  margin-left: 7%;
-  text-align: left;
-}
 
-.right{
-  overflow:hidden;
-  text-align: right;
-  margin-right: 10%;
-  margin-top: 100px;
-}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: linear-gradient(white, lightblue)
+  }

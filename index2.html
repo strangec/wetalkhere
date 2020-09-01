@@ -11,41 +11,44 @@
 
     <title>Just Between Us</title>
 
-  <div id="header"> <i>What do you want to say today?</i> </div>
+
+
+<div class="grid-container">
+  <div id="header"> What do you want to say today?</div>
 </head>
 <body>
-<div id="boxcontainer">
-<div id="select">
-  <div class="left">
+<div class="grid-child left">
 
 <form id="submit-to-google-sheet">
   <label for="to" required>to:</label>
+  <br>
   <select name="to" id="to">
     <option value="Sultan">Sultan</option>
 
 
     <option value="Charlotte">Charlotte</option>
   </select>
-</div>
 <br>
-<div class="right">
+<br>
   <label for="from" required>from:</label>
+  <br>
   <select name="from" id="from">
     <option value="Charlotte">Charlotte</option>
     <option value="Sultan">Sultan</option>
   </select>
   </div>
-      </div>
-</body>
-<div id="message">
-  <textarea id = "messagebox" name="message" type="text" placeholder="message" required> </textarea>
+<div class="grid-child right">
+  <textarea id ="messagebox" name="message" type="text" placeholder="message" required> </textarea>
   <button type="submit" placeholder="send" id="button"><i>Send</i></button>
 </form>
 
+
 </script>
 </div>
-</div>
+<img class="butterfly" src="butterfly2.png">
 
+</div>
+</body>
 
 <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbxiMOCb-umWbglzukTCQSL2NdPuAM-TaYyUK8ukn-8NkjW1rmu7/exec'
