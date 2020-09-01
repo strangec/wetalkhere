@@ -10,6 +10,9 @@ html
 body{
   color:lightgreen;
   font-family:helvetica;
+  background-image: url(drawing.png);
+  background-size:200%;
+  background-attachment:fixed;
 }
 .password{
   text-align: center;
@@ -31,13 +34,13 @@ body{
   margin-top:0%;
   position:relative;
   filter:blur(1.2em);
+  resize:vertical;
 }
 
 #messagebox{
   width:250px;
   height: 300px;
-  color: white;
-  background-color:#ffd187;
+  color: darkgreen;
   position:relative;
   margin-left:80%;
   margin-top: 0%;
