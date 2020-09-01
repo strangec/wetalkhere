@@ -27,7 +27,7 @@ body{
 
 .butterfly{
   height:400px;
-  margin-left: 50%;
+  margin-left: 70%;
   margin-top:0%;
   position:relative;
   filter:blur(1.2em);
@@ -60,7 +60,9 @@ body{
   padding-right:20px;
 }
 
-
+.grid-child-left{
+  margin-left: 2em;
+}
 
 
 @media only screen and (max-width: 600px) {
