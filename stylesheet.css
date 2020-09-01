@@ -29,6 +29,7 @@ body{
   margin-left: 50%;
   margin-top:20%;
   position:relative;
+  filter:blur(1.2em);
 }
 
 #messagebox{
